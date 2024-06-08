@@ -1,0 +1,90 @@
+.header {
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: #18181B;
+  box-shadow: 1px 1px 2px black;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 165px;
+}
+
+.twitch-logo {
+  height: 35px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.exploration-button {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.more-button {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+}
+
+.more-button:hover {
+  background-color: #313138;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  margin-left: -258px;
+}
+
+.search-bar {
+  width: 350px;
+  height: 32px;
+  background-color: #18181B;
+  border: 1px solid rgb(116, 116, 116);
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.search-bar::placeholder {
+  color: rgb(196, 196, 196);
+  padding-left: 7px;
+  font-size: 14px;
+}
+
+.search-icon {
+  height: 40px;
+  margin-left: -7px;
+  margin-top: -2px;
+}
+
+.search-button {
+  background-color: #2F2F35;
+  border: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: 35px;
+  height: 35px;
+}
+
+.right-section {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+}
+
