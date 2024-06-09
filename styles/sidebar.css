@@ -1,0 +1,11 @@
+.sidebar {
+  display: flex;
+
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  
+  width: 240px;
+  background-color: #1F1F23;
+}

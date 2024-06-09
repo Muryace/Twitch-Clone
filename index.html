@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/general.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/sidebar.css">
   <title>Twitch clone</title>
 </head>
 <body>
   <header class="header">
     <div class="left-section">
-      <img class="twitch-logo" src="icons/twitch-logo.png">
+      <img class="twitch-logo" src="icons/twitch-logo.png" alt="Sitio principal">
       <div class="exploration-button">
         Explorar
       </div>
-      <div class="more-button">
-        &vellip;
+      <div class="more-button-container">
+        <div class="more-button">&vellip;</div>
+        <div class="tooltip">Más</div>
       </div>
     </div>
     <div class="middle-section">
       <input class="search-bar" type="text" placeholder="Buscar">
       <button class="search-button">
-        <img class="search-icon" src="icons/search-icon.png">
+        <img class="search-icon" src="icons/search-icon.png" alt="Buscar">
       </button>
     </div>
     <div class="right-section">
-      <img class="prime-icon" src="icons/prime-icon.png">
-      <img class="seventv-icon" src="icons/seventv-icon.png">
+      <div class="prime-icon-container">
+        <img class="prime-icon" src="icons/prime-icon.png"  alt="Prime">
+        <div class="prime-notification-count">21</div>
+        <div class="tooltip">Beneficios de Prime Gaming</div>
+      </div>
+      <div class="seventv-icon-container">
+        <img class="seventv-icon" src="icons/seventv-icon.png" alt="7tv">
+        <div class="tooltip">7TV Settings</div>
+      </div>
       <button class="login-button">Iniciar sesión</button>
-      <button class="register-button">Registarse</button>
-      <img class="profile-unlog-icon" src="icons/profile-unlog-icon.png">
+      <button class="register-button">Registrarse</button>
+      <img class="profile-unlog-icon" src="icons/profile-unlog-icon.png" alt="Perfil">
     </div>
   </header>
+
+  <div class="sidebar">
+    
+  </div>
 </body>
 </html>

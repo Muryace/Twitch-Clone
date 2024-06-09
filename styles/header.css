@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 1000;
 
   position: fixed;
   top: 0;
@@ -53,12 +54,17 @@
 }
 
 .middle-section {
+  flex: 1;
+  margin-left: 37px;
+  margin-right: 25px;
+  max-width: 450px;
   display: flex;
   align-items: center;
-  margin-left: 72px;
 }
 .search-bar {
-  width: 350px;
+  flex: 1;
+  width: 0;
+  max-width: 371px;
   height: 32px;
   background-color: #18181B;
   border: 1px solid rgb(116, 116, 116);
@@ -95,11 +101,12 @@
   justify-content: space-between;
   width: 320px;
   margin-right: 14px;
+  flex-shrink: 0;
 }
 
 .prime-icon {
   height: 11px;
-  margin-right: 5px;
+  margin-right: 3px;
   cursor: pointer;
   padding: 9px 7px 9px 7px;
   border-radius: 3px;
@@ -107,6 +114,24 @@
 
 .prime-icon:hover {
   background-color: #313138;
+}
+
+.prime-icon-container {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+}
+
+.prime-notification-count {
+  position: absolute;
+  color: white;
+  top: -3px;
+  right: -3px;
+  background-color: red;
+  border-radius: 30px;
+  padding: 2px 7px 2px  7px;
+  border: 1.5px solid #18181B;
+  z-index: 50;
 }
 
 .seventv-icon {
@@ -173,4 +198,34 @@
 
 .profile-unlog-icon:hover {
   background-color: #313138;
+}
+
+.more-button-container,
+.prime-icon-container,
+.seventv-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-button-container .tooltip,
+.prime-icon-container .tooltip,
+.seventv-icon-container .tooltip {
+  position: absolute;
+  background-color: antiquewhite;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.more-button-container:hover .tooltip,
+.prime-icon-container:hover .tooltip,
+.seventv-icon-container:hover .tooltip {
+  opacity: 1;
 }
