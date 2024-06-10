@@ -1,5 +1,6 @@
 .sidebar {
   display: flex;
+  flex-direction: column;
 
   position: fixed;
   top: 50px;
@@ -8,4 +9,87 @@
   
   width: 240px;
   background-color: #1F1F23;
+}
+
+.sidebar-link {
+  display: flex;
+  margin-top: 14px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+
+.recomended-channels {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.sidebar-icon {
+  height: 15px;
+  width: 20px;
+  margin-top: 4px;
+}
+
+.sidebar-channel-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6px;
+
+  cursor: pointer;
+}
+
+.live-channels {
+  display: flex;
+  height: 42px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.live-channels:hover {
+  background-color: #26262C;
+}
+
+.channel-picture-container {
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.profile-pictures {
+  width: 30px;
+  border-radius: 100px;
+}
+
+.live-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.live-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+}
+
+.channel-name {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.viewers-info {
+  font-size: 13px;
+  position: absolute;
+  right: 10px;
+}
+
+.live-game {
+  font-size: 13px;
+  color: rgb(161, 161, 161);
+  margin-top: 2px;
 }

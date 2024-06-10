@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: space-between;
   width: 165px;
+  flex-shrink: 0;
 }
 
 .twitch-logo {
@@ -55,9 +56,9 @@
 
 .middle-section {
   flex: 1;
-  margin-left: 37px;
-  margin-right: 25px;
-  max-width: 450px;
+  margin-left: 35px;
+  margin-right: 50px;
+  max-width: 390px;
   display: flex;
   align-items: center;
 }
@@ -100,7 +101,7 @@
   align-items: center;
   justify-content: space-between;
   width: 320px;
-  margin-right: 14px;
+  margin-right: 12px;
   flex-shrink: 0;
 }
 
@@ -154,7 +155,7 @@
   margin-right: 10px;
   border: none;
   border-radius: 4px;
-  padding: 8px 14px 8px 14px;
+  padding: 8px 12px 8px 12px;
   cursor: pointer;
   transition: 0.15s;
   white-space: nowrap;
@@ -175,7 +176,7 @@
   font-size: 12px;
   border: none;
   border-radius: 4px;
-  padding: 8px 14px 8px 14px;
+  padding: 8px 12px 8px 12px;
   cursor: pointer;
   transition: 0.15s;
 }
