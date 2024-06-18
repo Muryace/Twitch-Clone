@@ -1,0 +1,61 @@
+/* utilizar position  para encajarlo en  el  medio, lo mismo para colocar botones de atras o  adelante, tambien para poner el "en vivo" y si es necesario  usar el @media */
+
+.live-container {
+  margin-top: 50px;
+  margin-left: 240px;
+}
+
+.live-carrousel {
+  height: 375px;
+  /*background-color: lightblue;*/
+}
+
+.live-carrousel-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.live-carrousel-preview {
+  height: 300px;
+}
+
+.live-carrousel-info {
+  display: flex;
+
+  background-color: #18181B;
+  height: 300px;
+  width: 215px;
+}
+
+.live-carrousel-profile-info {
+  display: grid;
+  grid-template-columns: 73px 1fr;
+}
+
+.live-carrousel-profile {
+  height: 50px;
+  margin-top: 12px;
+  margin-left: 12px;
+  border-radius: 50px;
+}
+
+.live-carrousel-profile-desc {
+  height: 65px;
+  color: white;
+  font-size: 13px;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.live-carrousel-profile-desc p {
+  margin: 4px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name, .category {
+  color: #BF94FF;
+} 
